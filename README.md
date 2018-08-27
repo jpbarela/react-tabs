@@ -128,6 +128,12 @@ The callback can optionally return `true` to cancel the change to the new tab.
 
 > In controlled mode the `onSelect` handler is a required prop.
 
+#### selected: `boolean`
+
+> default: false 
+
+Sets whether the tab is active. This prop should be used as a pass through for a [custom component](#custom-components).
+
 #### selectedIndex: `number`
 
 > default: `null`
@@ -364,6 +370,9 @@ const App = () => (
   </Tabs>
 );
 ```
+
+To use the selectd tabs functionality, create a `selected` prop on the custom component and pass that prop to `Tab` component. 
+
 ## License
 
 MIT
